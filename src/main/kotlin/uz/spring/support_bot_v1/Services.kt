@@ -89,6 +89,7 @@ class UserServiceImpl(
             sessions.rate = -1
             sessionRepository.save(sessions)
         }
+
         user.role = Role.OPERATOR
         user.state = STATE_OFFLINE
         user.operatorState = OperatorState.NOT_BUSY
